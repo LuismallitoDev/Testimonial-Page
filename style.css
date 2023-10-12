@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@300;400&family=Sora:wght@100;200;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+.background{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #FAFAF9;
+}
+.reviews{
+    margin-left: 60px;
+
+}
+.brands , .reviews{
+    width: 50%;
+}
+.star-div{
+    
+    background-color: #F5C044;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#star-review{
+    fill: #fff ;
+    stroke: none;
+    width: 70%;
+    height: 70%;
+    stroke-width: 2;
+}
+.title{
+    font-size: 36px;
+    margin-top: 20px;
+}
+.paragraph{
+    font-size: 16px;
+    color: #52525A;
+    width: 75%;
+    text-align: left;
+    line-height: 25px;
+    margin: 20px 0 ;
+    margin-right: 10px;
+
+}
+.reviews ul li{
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0 ;
+}
+.reviews ul li p{
+    color: #52525A;
+}
+.google,.meta{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.1) 20px 0 20px 0;
+}
+.google{
+    position: relative;
+    left: 25%;
+    margin-bottom: 50px;
+}
+.title-google , .title-meta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px;
+}
+.google-img-div , .meta-img-div{
+    width: 30%;
+    margin-right: 10px;
+}
+img{
+    width: 100%;
+}
+span{
+    font-weight: bold !important;
+}
+.text-google,.text-meta{
+    color: #52525A;
+    line-height: 30px;
+}
+.star path, .star path{
+    fill: #F5C044;
+    stroke: #F5C044;
+}
+#grey-star path{
+    fill: #D4D4D8;
+    stroke: #D4D4D8;
+}
+.check{
+    fill: #4CA154;
+}
+@media (max-width: 920px) {
+    .background{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .star-div{
+        margin-top: 40px;
+    }
+    .reviews,.brands{
+        width: 100%;
+    }
+    .meta,.google{
+        max-width: 465.2px;
+    }
+}
